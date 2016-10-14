@@ -16,13 +16,24 @@ var serv = angular.module('app')
 							name: 'Cookie',
 							category: 'food',
 							quantity: 3
-						}
-						,
+						},
 						{
 							id: 3,
 							name: 'Chips',
 							category: 'food',
 							quantity: 4
+						},
+						{
+							id: 4,
+							name: 'Donut',
+							category: 'food',
+							quantity: 7
+						},
+						{
+							id: 5,
+							name: 'Croisant',
+							category: 'food',
+							quantity: 1
 						}
 					];
 	var boughtList = [];
