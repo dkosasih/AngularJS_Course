@@ -1,0 +1,13 @@
+<ul ng-if="vm.filteredData.message===undefined">
+	<li ng-repeat="item in vm.filteredData.menu_items" >
+		<div class="row">
+			<strong>{{item.name}}</strong> <br />
+			description: {{item.description}}
+			<button class="btn btn-success btn-sm" ng-click="vm.onRemove({index: $index})">Don't want this one!</button>
+		<div>
+		<div>
+		&nbsp;
+		</div>
+	</li>
+</ul>
+<span class="errorMessage" ng-if="!vm.filteredData.message!==undefined">{{ vm.filteredData.message }}</span>
