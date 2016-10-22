@@ -4,7 +4,7 @@
 var serv = angular.module('app')
 .service('dataService', ['$http', function($http){
 	var service = this;
-	var apiEndPointBase = "http://davids-restaurant.herokuapp.com";
+	var apiEndPointBase = "https://davids-restaurant.herokuapp.com";
 	
 	service.getMenuItems = function() {
 		var response = $http({

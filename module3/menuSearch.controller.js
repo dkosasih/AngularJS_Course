@@ -14,7 +14,7 @@ angular.module('app')
 		}else{
 			vm.filteredData.message = "Nothing is found!";
 		}
-		console.log('in click', vm.filteredData);
+		
 		return vm.filteredData;
 	}
 	
