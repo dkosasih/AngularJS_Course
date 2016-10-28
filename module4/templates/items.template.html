@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">
+		<h1>Items</h1>
+	</div>
+	<div class="row">
+		<a ui-sref="home">Home</a>
+		<ul>
+			<li ng-repeat="item in vm.menuItems.menu_items" >
+				<div class="row">
+					<strong>{{item.short_name}}, {{item.name}}</strong> <br />
+					{{item.description}}
+				<div>
+				<div>
+				&nbsp;
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

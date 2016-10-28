@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style type="text/css">
+			.shopBox{
+				height: 300px;
+			}
+			.errorMessage{
+				color: red;
+				font-weight: bold;
+			}
+			ul{
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body ng-app="app">
+		<div style="margin-top:20px;">
+			<ui-view></ui-view>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+		<script src="./app.js"></script>
+		<script src="./routes.js"></script>
+		<script src="./services/data.service.js"></script>
+		<script src="./component/menuCategories.component.js"></script>
+		<script src="./controller/menuItems.controller.js"></script>
+		<script src="./controller/categories.controller.js"></script>
+	</body>
+</html>

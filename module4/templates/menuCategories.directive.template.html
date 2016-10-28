@@ -1,0 +1,10 @@
+<ul>
+	<li ng-repeat="item in vm.menuData" >
+		<div class="row">
+			<strong><a ui-sref="{{vm.linkToDetail}}({categoryId: item.short_name})">{{item.short_name}}</a>, {{item.name}}</strong> <br />
+		<div>
+		<div>
+		&nbsp;
+		</div>
+	</li>
+</ul>
